@@ -5,17 +5,17 @@
 
 Bu proje, Yazılım Kalitesi ve Güvencesi dersi dönem sonu projesi kapsamında geliştirilmiş, 5 farklı kaynak (Users, Products, Categories, Orders, Reviews) içeren kapsamlı bir REST API'dir.
 
-## 🚀 Teknolojiler
+## Teknolojiler
 
 *   **Runtime**: Node.js
 *   **Framework**: Express.js
-*   **Database**: SQLite (Geliştirme ve Test kolaylığı için) / MySQL (Desteklenir)
+*   **Database**: SQLite
 *   **ORM**: Sequelize
 *   **Testing**: Jest, Supertest
 *   **Documentation**: Swagger / OpenAPI
 *   **CI/CD**: GitHub Actions
 
-## 📦 Kurulum
+## Kurulum
 
 Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
 
@@ -36,7 +36,7 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     ```
     *Uygulama `http://localhost:3000` adresinde çalışmaya başlayacaktır.*
 
-## 📖 API Dokümantasyonu
+## API Dokümantasyonu
 
 API endpoints, request/response şemaları ve test imkanı için Swagger UI entegre edilmiştir.
 
@@ -47,10 +47,10 @@ API endpoints, request/response şemaları ve test imkanı için Swagger UI ente
 *   **Users**: `GET /api/users`, `POST /api/users`
 *   **Products**: `GET /api/products`, `POST /api/products`
 *   **Categories**: `GET /api/categories`, `POST /api/categories`
-*   **Orders**: `POST /api/orders` (Sipariş oluşturma ve stok düşümü yapar)
+*   **Orders**: `POST /api/orders`
 *   **Reviews**: `GET /api/reviews`, `POST /api/reviews`
 
-## 🧪 Testler
+## Testler
 
 Proje kapsamında **Birim (Unit)**, **Entegrasyon (Integration)** ve **Sistem (E2E)** testleri bulunmaktadır.
 
@@ -71,11 +71,11 @@ npm run test:coverage
 *   **Integration Tests**: API endpointleri SQLite (:memory:) veritabanı üzerinde test edilmiştir.
 *   **System Tests**: Kullanıcı kaydından sipariş oluşturmaya kadar olan tam akış test edilmiştir.
 
-## 🛠 CI/CD Pipeline
+## CI/CD Pipeline
 
 Bu proje **GitHub Actions** kullanılarak sürekli entegrasyon (CI) sürecine dahil edilmiştir.
 Her `push` ve `pull_request` işleminde:
-1.  Uygulama derlenir (Build).
+1.  Uygulama derlenir.
 2.  Tüm testler çalıştırılır.
 3.  Code coverage raporu oluşturulur (Codecov entegrasyonu mevcuttur).
 
