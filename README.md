@@ -1,4 +1,4 @@
-# Software QA Final Project (REST API)
+# Yazılım Kalite Güvencesi ve Testi
 
 ![CI Status](https://github.com/Reyisbey/Final-Projesi/actions/workflows/main.yml/badge.svg)
 ![Codecov](https://img.shields.io/codecov/c/github/Reyisbey/Final-Projesi)
